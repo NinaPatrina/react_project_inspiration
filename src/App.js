@@ -3,7 +3,7 @@ import "./App.css";
 import useSound from "use-sound";
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
-import Otter from "./data/Otter.jpg";
+import Otter from "./data/Otter.png";
 import BoardList from "./components/BoardList";
 import laugh from "./data/Laugh.wav";
 import Story from "./components/Story";
@@ -25,7 +25,8 @@ function App() {
         className="Otter"
         onClick={play}
       ></img>
-      <h1>Inspiration from the OtterSpace</h1>
+      <h1>Universal Odyssey: </h1>
+      <h1>Record Your Adventures</h1>
       {/* a button for the story/mulitverse toggle */}
       <input
         type="submit"
@@ -37,12 +38,9 @@ function App() {
       {/* if false will render story, if true will render board list */}
       {/* Code that links to page where we create a new world(board) */}
       <Link to="/new">
-        <div id="add-new-space">Create alternate world</div>
+        <div id="add-new-space">Create Gateway</div>
       </Link>
-      <footer>
-        &copy; 2022 Ada Developers Academy ✨ by Coders from the OtterSpace ✨
-        Doina ✨ Fena ✨ Marlyn ✨ Nina ✨
-      </footer>
+      <footer>&copy; 2023 Ada Developers Academy ✨ Nina Patrina ✨</footer>
     </div>
   );
 }

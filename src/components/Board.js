@@ -18,7 +18,6 @@ const Board = () => {
     owner: "",
     title: "",
   });
-  //!!!for instructors: We recognize that we used one useState for nested object, but it could be placed in multiple useState due to the different object fields changing. However, due to time, we will keep the state like this.
   // getting api from backend for one board by ID
   const getBoardDatafromAPI = (id) => {
     axios
@@ -118,11 +117,17 @@ const Board = () => {
     <div className="board">
       <Link to="/" className="HomeLink">
         <br />
-        Return Home
+        Back to Reality
       </Link>
-      <div id="board_title">Space 💫 {boardData.title}</div>
-      <div id="board-owner"> New Galaxy started by: {boardData.owner}</div>
-      <section>If it inspires you, then put it out into the universe!</section>
+      <div id="board_title">Portal 💫 {boardData.title}</div>
+      <div id="board-owner"> New Portal created by: {boardData.owner}</div>
+      <section>
+        Greetings, adventurer! Take a brave step and leave messages for yourself
+        and others. Your messages can be deleted or liked, enabling interaction
+        and connection on your journey. Document your thoughts, discoveries, and
+        experiences in this new world, inspiring others on their own Universal
+        Odyssey.
+      </section>
       {/* card form is rendered here in order to add a new card */}
       <CardForm handleSubmission={makeNewCard} />
       <CardList

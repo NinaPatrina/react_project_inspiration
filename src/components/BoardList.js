@@ -29,7 +29,7 @@ const BoardList = () => {
 
     // pop up window to confirm delete
     const confirm = window.confirm(
-      `Are you sure you wish to delete the Space ${board_name}?`
+      `Are you certain you want to delete this Portal ${board_name}?`
     );
     if (confirm) {
       axios

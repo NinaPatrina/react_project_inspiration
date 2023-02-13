@@ -15,7 +15,7 @@ img {
   font-size: 2rem;
   text-decoration: none;
   text-align: center;
-  margin-right: 100px;
+  margin-right: 50px;
   margin-top: 20px;
   background-image: url("./data/earth3.png");
   background-size: cover;
@@ -28,11 +28,11 @@ img {
 
 .Otter{
   background-image: none;
-  clip-path: circle(55%);
+  clip-path: circle(90%);
   border-radius: 25%;
-  width:260px;
-  height:260px;
-  transform: rotate(30deg);
+  width:350px;
+  height:350px;
+  transform: rotate(10deg);
 
 }
 

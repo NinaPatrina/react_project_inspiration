@@ -60,15 +60,15 @@ a:hover {
   font-size: 1.8rem;
   text-decoration: none;
   text-align: center;
-  margin-right: 100px;
-  margin-top: 20px; 
+  margin-right: 50px;
+  margin-top: 40px; 
   background-image: url("./data/earth3.png");
   background-size: cover;
   color:rgb(171, 234, 134);
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   font-weight: bold;
-  height:150px;
-  width:130px;
+  height:250px;
+  width:250px;
   z-index: 2;
 
 }

@@ -14,9 +14,7 @@ test("full app rendering/navigating'", async () => {
     </Router>
   );
   const user = userEvent.setup();
-  expect(
-    screen.getByText(/Inspiration from the OtterSpace/i)
-  ).toBeInTheDocument();
-  await user.click(screen.getByText(/Create alternate world/i));
+  expect(screen.getByText(/Record Your Adventures/i)).toBeInTheDocument();
+  await user.click(screen.getByText(/Create Gateway/i));
   expect(screen.getByText(/Arc of Infinity/i)).toBeInTheDocument();
 });

@@ -46,7 +46,9 @@ const NewBoardForm = () => {
     event.preventDefault();
     // this allows a message to appear in the input button for title and owner in the board
     if (boardData.title === "" || boardData.owner === "") {
-      setMessage("Please enter the name for the space and the creator");
+      setMessage(
+        "Please enter a name and creator for your portal before continuing."
+      );
     } else {
       // the two below functions makes the first letter of the first word and the second word, be capitalized
       boardData.title = boardData.title
@@ -62,8 +64,8 @@ const NewBoardForm = () => {
         .join(" ");
       // a message appears below the form to let us know a board space was created succesfully
       setMessage(
-        `Newly Formed Universe ${boardData.title} was created by ${boardData.owner}. 
-        The cosmos have spoken and it sends you the prophecy :`
+        `New Portal ${boardData.title} was created by ${boardData.owner}. Get ready to explore uncharted territories.
+        Remember that every choice you make and every path you take will shape the experience ahead. Keep an open mind and brace yourself for the unknown. Before you go, here is a word of wisdom to guide you on your journey: `
       );
       setId("visible");
 
@@ -91,9 +93,10 @@ const NewBoardForm = () => {
     <>
       <Link to="/" className="HomeLink">
         <br />
-        Return Home
+        <br />
+        Back to Odyssey
       </Link>
-      <h1>Arc of Infinity</h1>
+      <h1>Alternate Realms Hub</h1>
       <p className="story" id="first-line">
         Time.Space.Reality. It's more then a linear path. It's a prism of
         endless possibility, where a single choice can branch out into infinite
@@ -107,7 +110,7 @@ const NewBoardForm = () => {
           className="title"
           value={boardData.title}
           onChange={handleFormInput}
-          placeholder="Enter Space Name"
+          placeholder="Enter Portal Name"
         />
         <input
           name="owner"
@@ -117,7 +120,7 @@ const NewBoardForm = () => {
           placeholder="Creator"
           onChange={handleFormInput}
         />
-        <input type="submit" value="Big Bang" />
+        <input type="submit" value="Brave the Unknown" />
       </form>
       <p className="story">{message}</p>
       <p className="galaxy-text">"{quote}"</p>
